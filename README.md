@@ -51,33 +51,32 @@ A visual architecture diagram is included in the repository:
 
 ## Project Structure
 
-Warranty-Claims-Processor/
-├── README.md                         # Project overview and setup instructions
-├── requirements.txt                  # Python dependencies
-├── architecture_diagram.svg          # High-level system architecture diagram
+warranty-claims-processor/
+├── README.md
+├── requirements.txt
+├── architecture_diagram_fixed.svg
 ├── src/
-│   ├── __init__.py
-│   ├── main.py                       # CLI entry point (one-command demo)
-│   ├── orchestrator.py               # End-to-end workflow coordination
-│   ├── schemas.py                    # Shared data models and schemas
+│   ├── main.py
+│   ├── orchestrator.py
+│   ├── schemas.py
 │   └── tools/
-│       ├── __init__.py
-│       ├── inbox_tool.py             # File-based inbox reader and router
-│       ├── triage_tool.py            # Claim vs non-claim classification
-│       ├── extraction_tool.py        # Structured data extraction from emails
-│       ├── policy_retriever.py       # Policy selection and excerpt retrieval
-│       ├── decision_tool.py          # Policy-grounded decision logic
-│       ├── email_writer.py           # Customer email drafting
-│       └── label_generator.py        # Return shipping label generation
+│       ├── inbox_tool.py
+│       ├── triage_tool.py
+│       ├── extraction_tool.py
+│       ├── policy_retriever.py
+│       ├── decision_tool.py
+│       ├── email_writer.py
+│       └── label_generator.py
 ├── data/
-│   ├── inbox/                        # Sample incoming claim emails (JSON)
-│   ├── policies/                     # Warranty policy documents (JSON)
-│   ├── review_queue/                 # Generated human review packets
-│   ├── decisions/                    # Logged human decisions
-│   ├── outbox/                       # Draft customer emails and labels
-│   └── triage_rejected/              # Non-claim / spam emails
-└── report/
-    └── report.md                     # Design report and evaluation plan
+│   ├── inbox/
+│   ├── policies/
+│   ├── review_queue/
+│   ├── decisions/
+│   ├── outbox/
+│   └── triage_rejected/
+├── report/
+│   └── report.md
+
 
 
 ## Setup Instructions (Fresh Machine)
@@ -196,19 +195,19 @@ report/report.md
 
 The report covers:
 
-    - Problem framing and assumptions
+ - Problem framing and assumptions
 
-    - System design and agent roles
+ - System design and agent roles
 
-    - Policy selection and decision rationale
+ - Policy selection and decision rationale
 
-    - Human-in-the-loop workflow
+ - Human-in-the-loop workflow
 
-    - Evaluation plan and sample results
+ - Evaluation plan and sample results
 
-    - Future improvements
+ - Future improvements
 
-    - Intentional limitations and trade-offs
+ - Intentional limitations and trade-offs
 
 
 ## Final Notes
