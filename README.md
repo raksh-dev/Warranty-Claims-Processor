@@ -76,7 +76,7 @@ warranty-claims-processor/
 │   ├── outbox/                       # Draft emails and labels (runtime)
 │   └── triage_rejected/              # Non-claim emails (runtime)
 └── report/
-    └── report.md                     # Design & evaluation report
+    └── report.pdf                     # Design & evaluation report
 ```
 
 ## Setup Instructions (Fresh Machine)
