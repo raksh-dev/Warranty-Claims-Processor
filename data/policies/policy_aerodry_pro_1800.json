@@ -1,0 +1,16 @@
+{
+  "product_name": "AeroDry Pro 1800",
+  "warranty_period_months": 3,
+  "covered_issues": [
+    "Motor failure under normal household use",
+    "Overheating causing automatic shutdown"
+  ],
+  "exclusions": [
+    "Water exposure or moisture damage",
+    "Blocked air vents",
+    "Physical damage such as cracks or drops"
+  ],
+  "required_proof": [
+    "Proof of purchase"
+  ]
+}

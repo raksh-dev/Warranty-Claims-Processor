@@ -1,0 +1,15 @@
+{
+  "product_name": "AeroDry Compact 1200",
+  "warranty_period_months": 3,
+  "covered_issues": [
+    "Device not powering on",
+    "Loose internal wiring due to manufacturing defect"
+  ],
+  "exclusions": [
+    "Travel damage",
+    "Use outside supported voltage range"
+  ],
+  "required_proof": [
+    "Proof of purchase"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "product_name": "AeroDry Pro 2200",
+  "warranty_period_months": 3,
+  "covered_issues": [
+    "Heating element failure",
+    "Fan not spinning"
+  ],
+  "exclusions": [
+    "Use with voltage converters",
+    "Commercial or salon use",
+    "Unauthorized repairs"
+  ],
+  "required_proof": [
+    "Proof of purchase",
+    "Product photo showing model number"
+  ]
+}

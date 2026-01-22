@@ -1,0 +1,16 @@
+{
+  "product_name": "AeroDry MaxHeat 2400",
+  "warranty_period_months": 3,
+  "covered_issues": [
+    "Unexpected shutdown",
+    "Heating inconsistency"
+  ],
+  "exclusions": [
+    "Overuse beyond recommended duration",
+    "Blocked filters due to lack of cleaning"
+  ],
+  "required_proof": [
+    "Proof of purchase",
+    "Photo of filter condition"
+  ]
+}

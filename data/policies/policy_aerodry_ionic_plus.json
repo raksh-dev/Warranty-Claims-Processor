@@ -1,0 +1,16 @@
+{
+  "product_name": "AeroDry Ionic Plus",
+  "warranty_period_months": 3,
+  "covered_issues": [
+    "Ionic function not working",
+    "Excessive static during normal use"
+  ],
+  "exclusions": [
+    "Cosmetic wear",
+    "Accessories such as nozzles and diffusers"
+  ],
+  "required_proof": [
+    "Proof of purchase",
+    "Issue description"
+  ]
+}

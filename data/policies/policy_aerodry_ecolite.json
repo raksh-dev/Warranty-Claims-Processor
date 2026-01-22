@@ -1,0 +1,15 @@
+{
+  "product_name": "AeroDry EcoLite",
+  "warranty_period_months": 3,
+  "covered_issues": [
+    "Power regulation failure",
+    "Auto shutoff malfunction"
+  ],
+  "exclusions": [
+    "Eco mode misuse",
+    "Continuous operation over 30 minutes"
+  ],
+  "required_proof": [
+    "Proof of purchase"
+  ]
+}

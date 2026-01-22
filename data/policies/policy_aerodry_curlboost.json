@@ -1,0 +1,16 @@
+{
+  "product_name": "AeroDry CurlBoost",
+  "warranty_period_months": 3,
+  "covered_issues": [
+    "Curl attachment overheating",
+    "Motor stalling under normal use"
+  ],
+  "exclusions": [
+    "Attachment wear and tear",
+    "Improper attachment installation"
+  ],
+  "required_proof": [
+    "Proof of purchase",
+    "Photo of attachment setup"
+  ]
+}

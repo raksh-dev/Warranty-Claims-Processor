@@ -1,0 +1,15 @@
+{
+  "product_name": "AeroDry Travel Mini",
+  "warranty_period_months": 3,
+  "covered_issues": [
+    "Power button malfunction",
+    "Device not heating"
+  ],
+  "exclusions": [
+    "Damage during airline travel",
+    "Use with incompatible adapters"
+  ],
+  "required_proof": [
+    "Proof of purchase"
+  ]
+}

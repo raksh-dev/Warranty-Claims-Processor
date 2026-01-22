@@ -1,0 +1,15 @@
+{
+  "product_name": "AeroDry SilentFlow",
+  "warranty_period_months": 3,
+  "covered_issues": [
+    "Abnormal internal noise",
+    "Fan imbalance from manufacturing defect"
+  ],
+  "exclusions": [
+    "Foreign objects inside unit",
+    "Customer disassembly"
+  ],
+  "required_proof": [
+    "Proof of purchase"
+  ]
+}

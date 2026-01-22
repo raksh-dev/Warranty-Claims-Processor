@@ -1,0 +1,16 @@
+{
+  "product_name": "AeroDry UltraX",
+  "warranty_period_months": 3,
+  "covered_issues": [
+    "Software controlled temperature malfunction",
+    "Unresponsive touch controls"
+  ],
+  "exclusions": [
+    "Beta firmware usage",
+    "Firmware modification"
+  ],
+  "required_proof": [
+    "Proof of purchase",
+    "Firmware version"
+  ]
+}
