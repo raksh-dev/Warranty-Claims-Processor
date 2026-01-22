@@ -83,7 +83,7 @@ warranty-claims-processor/
 
 1. **Clone the Repository**
 
-        git clone https://github.com/raksh-dev/Warranty-Claims-Processor.git <br>
+        git clone https://github.com/raksh-dev/Warranty-Claims-Processor.git 
         cd Warranty-Claims-Processor
 
 2. **Required Directory Setup**
@@ -141,13 +141,13 @@ The system supports OpenAI, Anthropic, or a heuristic-only fallback.
 
 Create a .env file in the project root.
 
-OpenAI <br>
-            OPENAI_API_KEY=your_api_key <br>
-            OPENAI_MODEL=gpt-4o-mini
+OpenAI 
+        OPENAI_API_KEY=your_api_key 
+        OPENAI_MODEL=gpt-4o-mini
 
-Anthropic <br>
-            ANTHROPIC_API_KEY=your_api_key <br>
-            ANTHROPIC_MODEL=claude-3-5-sonnet-latest
+Anthropic 
+        ANTHROPIC_API_KEY=your_api_key 
+        ANTHROPIC_MODEL=claude-3-5-sonnet-latest
 
 
 Notes:
