@@ -83,8 +83,8 @@ warranty-claims-processor/
 
 1. **Clone the Repository**
 
-    ```git clone https://github.com/raksh-dev/Warranty-Claims-Processor.git <br>
-       cd Warranty-Claims-Processor```
+        git clone https://github.com/raksh-dev/Warranty-Claims-Processor.git <br>
+        cd Warranty-Claims-Processor
 
 2. **Required Directory Setup**
 
@@ -106,14 +106,14 @@ warranty-claims-processor/
 
     Create directories using terminal
 
-        macOS / Linux
+    macOS / Linux
 
-            ```mkdir -p data/review_queue data/decisions data/outbox data/triage_rejected```
+            mkdir -p data/review_queue data/decisions data/outbox data/triage_rejected
 
 
-        Windows (PowerShell)
+    Windows (PowerShell)
 
-            ```mkdir data\review_queue, data\decisions, data\outbox, data\triage_rejected```
+            mkdir data\review_queue, data\decisions, data\outbox, data\triage_rejected
 
 
     Once these directories are created, the system will write all generated outputs to the appropriate locations during execution.
@@ -122,17 +122,18 @@ warranty-claims-processor/
 
     macOS / Linux
 
-        '''python3 -m venv venv'''
-        '''source venv/bin/activate'''
+        python3 -m venv venv
+        source venv/bin/activate
 
-Windows (PowerShell)
+    Windows (PowerShell)
 
-python -m venv venv
-.\venv\Scripts\Activate.ps1
+        python -m venv venv
+        .\venv\Scripts\Activate.ps1
 
 4. **Install Dependencies**
-pip install --upgrade pip
-pip install -r requirements.txt
+
+        pip install --upgrade pip
+        pip install -r requirements.txt
 
 ## Environment Variables (LLM Access)
 
@@ -140,13 +141,13 @@ The system supports OpenAI, Anthropic, or a heuristic-only fallback.
 
 Create a .env file in the project root.
 
- OpenAI
-        OPENAI_API_KEY=your_api_key <br>
-        OPENAI_MODEL=gpt-4o-mini
+OpenAI <br>
+            OPENAI_API_KEY=your_api_key <br>
+            OPENAI_MODEL=gpt-4o-mini
 
- Anthropic
-        ANTHROPIC_API_KEY=your_api_key <br>
-        ANTHROPIC_MODEL=claude-3-5-sonnet-latest
+Anthropic <br>
+            ANTHROPIC_API_KEY=your_api_key <br>
+            ANTHROPIC_MODEL=claude-3-5-sonnet-latest
 
 
 Notes:
@@ -166,11 +167,11 @@ From the project root directory, run:
 
 This command:
 
-    Processes all sample emails in data/inbox/
+ - Processes all sample emails in data/inbox/
 
-    Displays human review prompts in the terminal
+ - Displays human review prompts in the terminal
 
-    Writes outputs to:
+ - Writes outputs to:
 
     - data/review_queue/
 
@@ -199,13 +200,13 @@ Based on the human decision, the system:
  - Requests missing information when required
 
 ## Sample Inputs and Outputs
-###Inputs
+### Inputs
 
  - Sample claim emails are located in data/inbox/
 
  - Warranty policy documents are located in data/policies/
 
-###Outputs
+### Outputs
 
 After running the demo:
 
