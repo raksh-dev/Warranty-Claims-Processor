@@ -142,10 +142,12 @@ The system supports OpenAI, Anthropic, or a heuristic-only fallback.
 Create a .env file in the project root.
 
 OpenAI 
+
         OPENAI_API_KEY=your_api_key 
         OPENAI_MODEL=gpt-4o-mini
 
 Anthropic 
+
         ANTHROPIC_API_KEY=your_api_key 
         ANTHROPIC_MODEL=claude-3-5-sonnet-latest
 
