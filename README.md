@@ -51,54 +51,86 @@ A visual architecture diagram is included in the repository:
 
 ## Project Structure
 
-warranty-claims-processor/
-├── README.md
-├── requirements.txt
-├── architecture_diagram_fixed.svg
+```text
+warranty-claims-processor/ 
+├── README.md                         # Project overview and setup instructions
+├── requirements.txt                  # Python dependencies
+├── architecture_diagram_fixed.svg    # System architecture diagram
 ├── src/
-│   ├── main.py
-│   ├── orchestrator.py
-│   ├── schemas.py
+│   ├── main.py                       # CLI entry point
+│   ├── orchestrator.py               # Workflow orchestration logic
+│   ├── schemas.py                    # Shared data models
 │   └── tools/
-│       ├── inbox_tool.py
-│       ├── triage_tool.py
-│       ├── extraction_tool.py
-│       ├── policy_retriever.py
-│       ├── decision_tool.py
-│       ├── email_writer.py
-│       └── label_generator.py
+│       ├── inbox_tool.py             # File-based inbox reader
+│       ├── triage_tool.py            # Claim vs non-claim classification
+│       ├── extraction_tool.py        # Structured claim extraction
+│       ├── policy_retriever.py       # Policy selection & retrieval
+│       ├── decision_tool.py          # Policy-grounded decision logic
+│       ├── email_writer.py           # Customer email drafting
+│       └── label_generator.py        # Return label generation
 ├── data/
-│   ├── inbox/
-│   ├── policies/
-│   ├── review_queue/
-│   ├── decisions/
-│   ├── outbox/
-│   └── triage_rejected/
-├── report/
-│   └── report.md
-
-
+│   ├── inbox/                        # Sample incoming claim emails
+│   ├── policies/                     # Warranty policy documents
+│   ├── review_queue/                 # Generated human review packets (runtime)
+│   ├── decisions/                    # Human decisions (runtime)
+│   ├── outbox/                       # Draft emails and labels (runtime)
+│   └── triage_rejected/              # Non-claim emails (runtime)
+└── report/
+    └── report.md                     # Design & evaluation report
+```
 
 ## Setup Instructions (Fresh Machine)
 
 1. **Clone the Repository**
 
-git clone https://github.com/raksh-dev/Warranty-Claims-Processor.git
-cd Warranty-Claims-Processor
+    '''git clone https://github.com/raksh-dev/Warranty-Claims-Processor.git''' <br>
+    '''cd Warranty-Claims-Processor'''
 
-2. **Create and Activate a Virtual Environment**
+2. **Required Directory Setup**
 
-macOS / Linux
+    Some output directories are intentionally not committed to the repository because they are generated at runtime and may be empty on a fresh clone.
 
-python3 -m venv venv
-source venv/bin/activate
+    Before running the demo, create the following directories inside the data/ folder:
+
+     - data/review_queue/
+
+     - data/decisions/
+
+     - data/outbox/
+
+     - data/triage_rejected/
+
+    Create directories manually
+
+        You may create these folders using your file explorer or terminal.
+
+    Create directories using terminal
+
+        macOS / Linux
+
+            '''mkdir -p data/review_queue data/decisions data/outbox data/triage_rejected'''
+
+
+        Windows (PowerShell)
+
+            '''mkdir data\review_queue, data\decisions, data\outbox, data\triage_rejected'''
+
+
+    Once these directories are created, the system will write all generated outputs to the appropriate locations during execution.
+
+3. **Create and Activate a Virtual Environment**
+
+    macOS / Linux
+
+        '''python3 -m venv venv'''
+        '''source venv/bin/activate'''
 
 Windows (PowerShell)
 
 python -m venv venv
 .\venv\Scripts\Activate.ps1
 
-3. **Install Dependencies**
+4. **Install Dependencies**
 pip install --upgrade pip
 pip install -r requirements.txt
 
