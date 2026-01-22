@@ -83,8 +83,8 @@ warranty-claims-processor/
 
 1. **Clone the Repository**
 
-    '''git clone https://github.com/raksh-dev/Warranty-Claims-Processor.git''' <br>
-    '''cd Warranty-Claims-Processor'''
+    ```git clone https://github.com/raksh-dev/Warranty-Claims-Processor.git <br>
+       cd Warranty-Claims-Processor```
 
 2. **Required Directory Setup**
 
@@ -108,12 +108,12 @@ warranty-claims-processor/
 
         macOS / Linux
 
-            '''mkdir -p data/review_queue data/decisions data/outbox data/triage_rejected'''
+            ```mkdir -p data/review_queue data/decisions data/outbox data/triage_rejected```
 
 
         Windows (PowerShell)
 
-            '''mkdir data\review_queue, data\decisions, data\outbox, data\triage_rejected'''
+            ```mkdir data\review_queue, data\decisions, data\outbox, data\triage_rejected```
 
 
     Once these directories are created, the system will write all generated outputs to the appropriate locations during execution.
@@ -140,13 +140,13 @@ The system supports OpenAI, Anthropic, or a heuristic-only fallback.
 
 Create a .env file in the project root.
 
-OpenAI
-OPENAI_API_KEY=your_api_key
-OPENAI_MODEL=gpt-4o-mini
+ OpenAI
+        OPENAI_API_KEY=your_api_key <br>
+        OPENAI_MODEL=gpt-4o-mini
 
-Anthropic
-ANTHROPIC_API_KEY=your_api_key
-ANTHROPIC_MODEL=claude-3-5-sonnet-latest
+ Anthropic
+        ANTHROPIC_API_KEY=your_api_key <br>
+        ANTHROPIC_MODEL=claude-3-5-sonnet-latest
 
 
 Notes:
@@ -161,24 +161,24 @@ Notes:
 
 From the project root directory, run:
 
-python -m src.main demo
+        python -m src.main demo
 
 
 This command:
 
-Processes all sample emails in data/inbox/
+    Processes all sample emails in data/inbox/
 
-Displays human review prompts in the terminal
+    Displays human review prompts in the terminal
 
-Writes outputs to:
+    Writes outputs to:
 
- - data/review_queue/
+    - data/review_queue/
 
- - data/decisions/
+    - data/decisions/
 
- - data/outbox/
+    - data/outbox/
 
- - data/triage_rejected/
+    - data/triage_rejected/
 
 ## Human-in-the-Loop Interaction
 
@@ -199,31 +199,31 @@ Based on the human decision, the system:
  - Requests missing information when required
 
 ## Sample Inputs and Outputs
-Inputs
+###Inputs
 
-Sample claim emails are located in data/inbox/
+ - Sample claim emails are located in data/inbox/
 
-Warranty policy documents are located in data/policies/
+ - Warranty policy documents are located in data/policies/
 
-Outputs
+###Outputs
 
 After running the demo:
 
-Human review packets → data/review_queue/*.json
+ - Human review packets → data/review_queue/*.json
 
-Human decisions → data/decisions/*.json
+ - Human decisions → data/decisions/*.json
 
-Customer emails → data/outbox/*.txt
+ - Customer emails → data/outbox/*.txt
 
-Return labels → data/outbox/*.txt
+ - Return labels → data/outbox/*.txt
 
-Rejected non-claim emails → data/triage_rejected/
+ - Rejected non-claim emails → data/triage_rejected/
 
 ## Evaluation & Reporting
 
 A detailed design and evaluation report is included at:
 
-report/report.md
+        report/report.md
 
 The report covers:
 
@@ -244,4 +244,4 @@ The report covers:
 
 ## Final Notes
 
-This project prioritizes correctness, explainability, and human oversight over full automation. It demonstrates how agentic AI can safely support complex, policy-driven workflows in real-world operational settings
+This project prioritizes correctness, explainability, and human oversight over full automation. It demonstrates how agentic AI can safely support complex, policy-driven workflows in real-world operational settings.
